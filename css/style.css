@@ -10,7 +10,7 @@ input[type="number"]::-webkit-inner-spin-button {
 input,button,textarea,select{
 	padding:0.5em;
 	width:13em;
-	resize: none;
+	resize: vertical;
 }
 #main{
 	display:none;
@@ -72,6 +72,9 @@ li label{
 	text-align:center;
 }
 
+textarea{
+	height:5em;
+}
 .class-entered > .ui-state-default {
 	background: #bcfa89 !important;
 	color: #000 !important;
@@ -84,4 +87,8 @@ li label{
    text-align: center;
    justify-content: space-around;
    -webkit-justify-content: space-around;
+}
+
+#datepicker_chart{
+	text-align:center;
 }

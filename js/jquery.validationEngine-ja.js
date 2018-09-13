@@ -17,7 +17,7 @@
                     "alertTextCheckboxMultiple": "* 選択してください",
                     "alertTextCheckboxe": "* チェックボックスをチェックしてください"
                 },
-                "requiredInFunction": { 
+                "requiredInFunction": {
                     "func": function(field, rules, i, options){
                         return (field.val() == "test") ? true : false;
                     },
@@ -56,7 +56,7 @@
                     "regex": "none",
                     "alertText": "* ",
                     "alertText2": " より最近の日付にしてください"
-                },	
+                },
                 "maxCheckbox": {
                     "regex": "none",
                     "alertText": "* チェックしすぎです"
@@ -117,6 +117,10 @@
                     "regex": /^[0-9a-zA-Z]+$/,
                     "alertText": "* 半角英数で入力してください"
                 },
+                "bannedSpecial":{
+                	"regex": /^[ぁ-んァ-ン０-９a-zA-Z0-9\-\?!= %\+@]+$/,
+                    "alertText": "* 特殊文字は使用できません"
+                },
                 // --- CUSTOM RULES -- Those are specific to the demos, they can be removed or changed to your likings
                 "ajaxUserCall": {
                     "url": "ajaxValidateFieldUser",
@@ -139,11 +143,11 @@
                     "alertText": "* 『HELLO』と入力してください"
                 }
             };
-            
+
         }
     };
     $.validationEngineLanguage.newLang();
 })(jQuery);
 
 
-    
+

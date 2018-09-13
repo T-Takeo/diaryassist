@@ -6,6 +6,10 @@ $(function(){
 	$("#form_signup").validationEngine({
 		promptPosition: "topLeft"
 	});
+	//入力フォーム
+	$("#form_diary").validationEngine({
+		promptPosition: "topLeft"
+	});
 
 	//アカウント登録後のアクション
 	if(code != ""){
@@ -169,7 +173,7 @@ $(function(){
 							      datasets: [
 							    	  {
 								         label: "作業時間",
-								         borderColor: 'rgb(0, 0, 255)',
+								         borderColor: 'rgb(0, 255, 0)',
 								         lineTension: 0,
 								         fill: false,
 								         data: working_hour
@@ -198,7 +202,7 @@ $(function(){
 							      datasets: [
 							    	  {
 								         label: "灌水時間",
-								         borderColor: 'rgb(0, 0, 255)',
+								         borderColor: 'rgb(0, 0, 128)',
 								         fill: false,
 								         data: water_minutes
 							    	  }
@@ -226,7 +230,7 @@ $(function(){
 							      datasets: [
 							    	  {
 								         label: "収穫量",
-								         borderColor: 'rgb(0, 0, 255)',
+								         borderColor: 'rgb(255, 0, 255)',
 								         fill: false,
 								         data: yield
 							    	  }
